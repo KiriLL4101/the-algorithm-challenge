@@ -1,2 +1,2 @@
-import "jest-sorted";
-import "jest-extended";
+import 'jest-sorted'
+import 'jest-extended'
