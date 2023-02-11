@@ -1,20 +1,13 @@
 export function bubbleSort (array: number[]): number[] {
-  let swapped = false
-
   for (let i = 0; i < array.length; i++) {
-    const a = array[i]
-    const b = array[i + 1]
-
-    if (!isNaN(a) && !isNaN(b)) {
-      if (a > b) {
-        array[i] = b
-        array[i + 1] = a
-        swapped = true
+    for (let j = 0; j < array.length - i - 1; j++) {
+      if (array[j] > array[j + 1]) {
+        const element = array[j]
+        array[j] = array[j + 1]
+        array[j + 1] = element
       }
     }
   }
 
-  if (!swapped) return array
-
-  return bubbleSort(array)
+  return array
 }
