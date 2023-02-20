@@ -1,5 +1,6 @@
 import { binarySearch } from './'
 
+// TODO
 function getRandomArrayNumber (length: number, max: number): number[] {
   return [...new Set(new Array(length).fill(Math.floor(Math.random() * max)))]
 }
