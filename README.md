@@ -21,7 +21,7 @@ This project needs `node` and `npm`/`yarn`.
 
 ```bash
 cd typescript
-npm i
-npm run test
-npm run start # Watch mode
+yarn
+yarn test
+yarn start # Watch mode
 ```

@@ -19,7 +19,7 @@ describe('binarySearch', () => {
     const sortedArrayOfObjects = [
       { key: 1, value: 'value1' },
       { key: 2, value: 'value2' },
-      { key: 3, value: 'value3' },
+      { key: 3, value: 'value3' }
     ]
 
     const comparator = (a: AnyObject, b: AnyObject): number => {
