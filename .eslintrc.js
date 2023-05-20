@@ -20,6 +20,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/space-before-function-paren': 0,
     '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/unbound-method': 0
+    '@typescript-eslint/unbound-method': 0,
+    '@typescript-eslint/no-extra-semi': 0
   }
 }
