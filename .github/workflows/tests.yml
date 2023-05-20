@@ -8,7 +8,7 @@ on:
 
 jobs:
   typescript:
-    name: Test Typescript side
+    name: All tests
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 13
 
-      - name: Run npm test
+      - name: yarn run test
         run: |
           node --version
-          yarn i
+          yarn
           yarn test
