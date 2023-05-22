@@ -1,10 +1,11 @@
-import { bubbleSort } from './index'
+import { bubbleSort } from './bubble-sort'
+import { selectionSort } from './selection-sort'
 
 type SortingFunction = (array: number[]) => number[]
 
 const sortingFunctions: Array<[string, SortingFunction]> = [
-  ['Bubble Sorting', bubbleSort]
-  //   ['Selection Sorting', selectionSort],
+  ['Bubble Sorting', bubbleSort],
+  ['Selection Sorting', selectionSort]
   //   ['Insertion Sorting', insertionSort],
   //   ['Quick Sorting', quickSort],
   //   ['Merge Sorting', mergeSort],
