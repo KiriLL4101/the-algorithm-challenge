@@ -1,19 +1,12 @@
-export function selectionSort(array: number[], startAt = 0): number[] {
-  if (startAt === array.length) {
-    return array
-  }
+export function selectionSort(array: number[]): number[] {
+    for (let idx = 0; idx < array.length; idx++) {
+        const left = array.slice(0, array.length - idx)
 
-  let smallest: number | null = null
-  let smallestIndex = 0
+        const max = Math.max(...left)
+        const index = left.indexOf(max)
 
-  for (let i = startAt; i < array.length; i++) {
-    if (smallest === null || smallest > array[i]) {
-      smallest = array[i]
-      smallestIndex = i
+        ;[array[left.length - 1], array[index]] = [max, array[left.length - 1]]
     }
-  }
 
-  ;[array[startAt], array[smallestIndex]] = [array[smallestIndex], array[startAt]]
-
-  return selectionSort(array, startAt + 1)
+    return array
 }
